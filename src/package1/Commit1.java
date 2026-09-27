@@ -5,7 +5,10 @@ public class Commit1 {
 	
 // comentariossssss
 	public static void main(String[] args) {
-		System.out.println("Primeros pasos");
+		String name = "Alejandro";
+				
+		System.out.println("Mi nombre es " + name);
+		System.out.printf("El estudiante %s está aprendiendo Java", name);
 		
 	}
 }
