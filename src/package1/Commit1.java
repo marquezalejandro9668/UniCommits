@@ -6,17 +6,23 @@ import java.util.List;
 public class Commit1 {
 	
 	/** esto debería darle la vuelta a una lista
+	 * y comprobar si son iguales la lista original y la lista dada la vuelta
 	 * 
 	 * @param a
 	 * @return
 	 */
 	public static List<Integer> daleLaVuelta(List<Integer> a){
+		
 		List<Integer> ledilavuelta = new ArrayList<>();
 		for(int i= a.size()-1; i>=0; i--) {
 			ledilavuelta.add(a.get(i));
-		}
+			}
+		if (a.equals(ledilavuelta)) {
+			System.out.println("Si esta dada la vuelta");
+			}
 		return ledilavuelta;
-	}
+		
+		}
 	
 	
 // comentariossssss
