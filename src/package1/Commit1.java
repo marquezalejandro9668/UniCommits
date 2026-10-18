@@ -6,12 +6,13 @@ import java.util.List;
 public class Commit1 {
 	
 	/** esto debería darle la vuelta a una lista
-	 * y comprobar si son iguales la lista original y la lista dada la vuelta
+	 * y comprobar si son iguales la lista original y la lista dada la vuelta.
+	 * Además ahora pasa la lista a un string y lo pone en minúsculas
 	 * 
 	 * @param a
 	 * @return
 	 */
-	public static List<Integer> daleLaVuelta(List<Integer> a){
+	public static String daleLaVuelta(List<Integer> a){
 		
 		List<Integer> ledilavuelta = new ArrayList<>();
 		for(int i= a.size()-1; i>=0; i--) {
@@ -20,7 +21,11 @@ public class Commit1 {
 		if (a.equals(ledilavuelta)) {
 			System.out.println("Si esta dada la vuelta");
 			}
-		return ledilavuelta;
+		
+		String stringDeLaLista = ledilavuelta.toString();
+		String minusString = stringDeLaLista.toLowerCase();
+		
+		return minusString;
 		
 		}
 	
